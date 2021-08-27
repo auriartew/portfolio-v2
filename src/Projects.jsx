@@ -32,7 +32,7 @@ export default function Projects() {
                         <div className="project">
                             <div className="top">
                                 <p>Portfolio Site</p>
-                                <a href="https://angelinauriarte.netlify.app/" target="_blank">
+                                <a href="https://auportfolio.netlify.app/" target="_blank">
                                     <button className="buttonfx">
                                         Visit website  
                                     </button>
