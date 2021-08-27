@@ -977,3 +977,103 @@ button {
   text-align: center;
   font-size: 0.8rem;
 }
+
+/* Mobile CSS */
+@media only screen and (max-width: 600px) {
+  .showcase h1 {
+    font-size: 2rem;
+    width: 60%;
+  }
+
+  .about-box {
+    width: 80vw;
+  }
+
+  .about-title {
+    font-size: 2rem;
+  }
+
+  .about-info {
+    max-width: 100%;
+  }
+
+  .about-info > div {
+    font-size: 20px;
+  }
+
+  .projects {
+    height: unset;
+  }
+
+  .projects h2 {
+    margin-top: 4vh;
+    margin-bottom: 5vh;
+  }
+
+  .projects-container {
+    flex-direction: row;
+    align-items: flex-start;
+    padding-bottom: 1rem;
+  }
+
+  .projects-container .row {
+    flex-direction: column;
+    align-items: unset;
+  }
+
+  .row .project {
+    width: unset;
+    margin-bottom: 4vh;
+  }
+
+  .project-description {
+    margin-top: 0;
+    height: 35vh;
+    width: unset;
+    margin-bottom: 4vh;
+  }
+
+  .skill-container {
+    padding-left: 10%;
+    padding-right: 5%;
+    padding-top: 6%;
+    min-height: auto;
+    padding-bottom: 15%;
+  }
+
+  .skill-heading {
+    font-size: 2rem;
+    padding-top: 1rem;
+    line-height: 2rem;
+    padding-bottom: 5%;
+  }
+
+  .skill-info {
+    padding-right: 6%;
+  }
+
+  .detailed-skills .items {
+    flex-direction: column;
+  }
+
+  .footer-links {
+    left: 0;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .footer-links ul {
+    justify-content: space-around;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .about-title h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+
+  .footer-links ul {
+
+  }
+}
