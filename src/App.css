@@ -2,7 +2,7 @@
 :root {
   --primary-color: rgba(13, 110, 139, 0.75);
   --secondary-color: rgb(132 251 255);
-  --tertiary-color: #2c3341;
+  --tertiary-color: #232427;
   --overlay-color: rgba(24, 39, 51 , 0.85);
   --menu-speed: 0.75s;
   scroll-behavior: smooth;
@@ -624,7 +624,7 @@ button {
   align-items: center;
   height: 30vh;
   border-radius: 0px;
-  background-color: rgba(24, 39, 51 , 0.85);
+  background-color: rgb(19 179 217 / 38%);
   color: whitesmoke;
   text-align: center;
   overflow: visible;
@@ -928,26 +928,26 @@ button {
 /* Footer */
 .footer {
   height: 60vh;
-  background-color: rgb(37, 37, 44);
+  background-color: rgb(19 91 114);
   color: whitesmoke;
   display: grid;
-  
+  justify-content: center;
+
   
 }
 
 .footer-links {
   margin-top: 9vh;
-  max-width: 40vw;
-  position: relative;
-  left: 50%;
+ 
+  
 }
 
 .footer-links ul {
   list-style-type: none;
-  display: grid;
-  grid-auto-flow: column;
-  align-items: flex-end;
-  justify-items: flex-end;
+  display: flex;
+  flex-direction: row;
+  
+  justify-content: space-between;
 }
 
 .footer-links a {

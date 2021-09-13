@@ -24,7 +24,7 @@ export default function Introduction() {
 
         <header className="showcase" id="home">
             <div className="container showcase-inner">
-            <h1>Hi, I am <span className="name">Angelina</span>. I'm a junior front-end developer</h1>
+            <h1>Hi, I am <span className="name">Angelina</span>. I'm a full stack developer</h1>
             <a href="#about" className="btn">Read More</a>
             </div>
         </header>
