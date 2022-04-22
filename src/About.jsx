@@ -12,7 +12,7 @@ export default function About() {
                             Angelina Uriarte
                         </div>
                         <div className="about-title">
-                            <h1>Web Developer</h1>
+                            <h1>UI/UX Designer</h1>
                         </div>
                                         
                         <div className="about-info" >

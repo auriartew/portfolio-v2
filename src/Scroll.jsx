@@ -24,10 +24,12 @@ export default function Scroll() {
     return (
         <>
             <Div animate={show.itemOne} ref={ourRef}>
-            I'm a psychology major turned front-end developer 
-            with a passion for transforming the psychological principles
-            of cognition, sensation, and perception
-            into beautiful user experiences.
+            I'm an analytical UX/UI designer from South Florida.
+            I design and build modern functional websites
+            custom fit for each client's needs. I pay special
+            attention to the end user's esperience by creating
+            simple and intuitive user flows that 
+            effortlessly guide users from point A to point B.
             </Div>
         
         </>

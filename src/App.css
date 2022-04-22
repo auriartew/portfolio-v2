@@ -288,7 +288,7 @@ body {
 
 .about {
   height: auto;
-  min-height: 110vh;
+  min-height: 130vh;
   background-color: var(--tertiary-color);
   color: white;
   z-index: -1;
@@ -299,7 +299,7 @@ body {
 }
 
 .about-container {
-  padding-top: 20vh;
+  padding-top: 25vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -348,12 +348,12 @@ body {
   font-size: 3.5rem;
   line-height: 6rem;
   margin-bottom: 5%;
-  max-width: 50%;
+  min-width: 50%;
   text-align: left;
 }
 
 .about-info {
-  max-width: 80%;
+  max-width: 90%;
   text-align: left;
   -webkit-animation: txtFlyIn 2s forwards;
   -moz-animation: txtFlyInot 2s forwards;
