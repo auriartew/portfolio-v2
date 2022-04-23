@@ -464,7 +464,7 @@ body {
 /* Projects Container */
 
 .projects {
-  height: 110vh;
+  height: fit-content;
   width: 100%;
   position: relative;
   background-color: var(--tertiary-color);
@@ -495,6 +495,11 @@ body {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+}
+
+.projects-container .row .col {
+  display: flex;
+  flex-direction: column;
 }
 
 .project, .project-description {
@@ -536,7 +541,6 @@ body {
   height: 100%;
   width: 100%;
   z-index: -2;
-  background-image: url(img/uriartevisa.PNG);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -544,12 +548,20 @@ body {
   transform 0.45s;
 }
 
-.project:nth-child(2) .back {
-  background-image: url(img/ancestry.PNG);
+.row1 .col:nth-child(1) .back {
+  background-image: url(img/uriartevisa.PNG);
 }
 
-.project:nth-child(3) .back {
+.row1 .col:nth-child(2) .back {
+  background-image: url(img/deltadesigns.PNG);
+}
+
+.row1 .col:nth-child(3) .back {
   background-image: url(img/portfolio.PNG);
+}
+
+.row2 .col:nth-child(1) .back {
+  background-image: url(img/ancestry.PNG);
 }
 
 /* FADE ON MOUSE HOVER */
@@ -624,10 +636,12 @@ button {
   align-items: center;
   height: 30vh;
   border-radius: 0px;
+  padding: 1vw;
   background-color: rgb(19 179 217 / 38%);
   color: whitesmoke;
   text-align: center;
   overflow: visible;
+  margin-bottom: 5vw;
 }
 .project-description p {
   margin-top: -9vh;
@@ -1011,7 +1025,7 @@ button {
   }
 
   .projects-container {
-    flex-direction: row;
+    flex-direction: column;
     align-items: flex-start;
     padding-bottom: 1rem;
   }
@@ -1023,7 +1037,7 @@ button {
 
   .row .project {
     width: unset;
-    margin-bottom: 4vh;
+    margin-bottom: 0vh;
   }
 
   .project-description {
