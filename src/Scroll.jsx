@@ -23,7 +23,7 @@ export default function Scroll() {
     
     return (
         <>
-            <Div animate={show.itemOne} ref={ourRef}>
+            <Div className="description" animate={show.itemOne} ref={ourRef}>
             I'm an analytical UX/UI designer from South Florida.
             I design and build modern functional websites
             custom fit for each client's needs. I pay special

@@ -45,7 +45,7 @@ body {
   background: var(--primary-color);
   color: #fff;
   min-height: 100vh;
-  height: auto;
+  height: fit-content;
   position: relative;
   display: flex;
   justify-content: center;
@@ -133,7 +133,6 @@ body {
 }
 
 .btn:hover {
-  
   transform: scale(1.1);
 }
 
@@ -287,8 +286,9 @@ body {
 /*ABOUT SECTION*/
 
 .about {
-  height: auto;
-  min-height: 130vh;
+  height: fit-content;
+  padding-top: 1vw;
+  padding-bottom: 20vw;
   background-color: var(--tertiary-color);
   color: white;
   z-index: -1;
@@ -299,7 +299,7 @@ body {
 }
 
 .about-container {
-  padding-top: 25vh;
+  
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -307,27 +307,14 @@ body {
 }
 
 .about-box {
-  width: 60vw;
-  height: 60vh;
+  padding: 0vw 20vw;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   justify-content: center;
   
 }
 
-.about-box:nth-child(2) {
-  position: relative;
-  width: 60vw;
-  height: 60vh;
-  top: -50%;
-
-  border-color: rgba(74, 171, 201, 0.644);
-  z-index: -1;
-  -webkit-animation: rot 2s forwards;
-  -moz-animation: rot 2s forwards;
-  -o-animation: rot 2s forwards;
-  animation: rot 2s forwards;
-}
 
 @keyframes txtFlyIn{
   0% { transform:translateY(-100%); }
@@ -335,21 +322,30 @@ body {
 }
 
 .small-text {
-  top: -5%;
-  margin-bottom: 3%;
+  font-size: 1.4vw;
+  display: inline-block;
+  border: 2px solid white;
+  background: transparent;
+  color: rgb(60, 187, 196);
+  padding: 0.5rem 1.25rem;
+  transition: 0.5s ease-in-out;
+  text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
-  color: rgb(161, 161, 161);
+  width: fit-content;
 }
 
 .about-title {
   position: relative;
   font-family: sans-serif;
-  font-size: 3.5rem;
-  line-height: 6rem;
-  margin-bottom: 5%;
-  min-width: 50%;
+  font-size: 5vw;
+  line-height: 9vw;
+  margin-bottom: 1vw;
   text-align: left;
+}
+
+.about-title span {
+  color: rgb(60, 187, 196);
 }
 
 .about-info {
@@ -361,26 +357,36 @@ body {
   animation: txtFlyIn 2s forwards;
 }
 
-.about-info p {
-  font-size: 1.8rem;
+.description {
+  font-size: 2vw !important;
 }
 
-
+.about-box .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 88%;
+}
 .resume {
-  width: 6.5vw; 
   margin-top: 5vh;
+  transition: 0.45s ease-in-out;
+}
+
+.resume:hover {
+  transform: scale(1.1);
 }
 
 .resume a {
-  color: rgb(248, 248, 248);;
+  color: rgb(161, 161, 161);
   text-decoration: none;
-  border-bottom: 4px dotted rgb(161, 161, 161);;
+  border-bottom: 4px dotted rgb(161, 161, 161);
   transition: 0.45s ease-in-out;
 }
 
 .resume a:hover {
   opacity: 0.5;
 }
+
 
 .lines {
   position: absolute;
@@ -466,6 +472,7 @@ body {
 .projects {
   height: fit-content;
   width: 100%;
+  padding-bottom: 10vw;
   position: relative;
   background-color: var(--tertiary-color);
   color: white;
@@ -477,8 +484,10 @@ body {
   display: flex;
   flex-direction: row;
   padding-left: 5.9vw;
-  font-size: 4rem;
+  font-size: 4vw;
   margin-bottom: 10vh;
+  color: white;
+
 }
 
 .projects-container {
@@ -495,17 +504,18 @@ body {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  margin-bottom: 5vw;
 }
 
 .projects-container .row .col {
   display: flex;
   flex-direction: column;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .project, .project-description {
   height: 35vh;
   width: 25vw;
-  
   text-align: center;
   display: grid;
   border-radius: 0px;
@@ -520,6 +530,16 @@ body {
 .project > * {
   grid-column: 1 / 1;
   grid-row: 1 / 1;
+}
+
+.project-description h3 {
+  font-size: 2vw;
+  line-height: 2vw;
+}
+
+.project-description p {
+  font-size: 1.4vw;
+  line-height: 2vw;
 }
 
 /* CONTENTS ON TOP */
@@ -578,7 +598,7 @@ body {
   font-family: 'Roboto';
   font-weight: bold;
   letter-spacing: 0.1rem;
-  font-size: 1.2rem;
+  font-size: 1.2vw;
   padding-top: 1rem;
 }
 
@@ -637,11 +657,10 @@ button {
   height: 30vh;
   border-radius: 0px;
   padding: 1vw;
-  background-color: rgb(19 179 217 / 38%);
+  background-color: rgb(0, 126, 158);
   color: whitesmoke;
   text-align: center;
   overflow: visible;
-  margin-bottom: 5vw;
 }
 .project-description p {
   margin-top: -9vh;
@@ -993,7 +1012,7 @@ button {
 }
 
 /* Mobile CSS */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 750px) {
   .showcase h1 {
     font-size: 2rem;
     width: 60%;
@@ -1003,31 +1022,35 @@ button {
     width: 80vw;
   }
 
-  .about-title {
-    font-size: 2rem;
-  }
 
   .about-info {
     max-width: 100%;
   }
 
-  .about-info > div {
-    font-size: 20px;
+  .description {
+    font-size: 4vw !important;
   }
 
   .projects {
     height: unset;
+
   }
 
   .projects h2 {
     margin-top: 4vh;
     margin-bottom: 5vh;
+    font-size: 7vw;
   }
 
   .projects-container {
     flex-direction: column;
     align-items: flex-start;
     padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 6vw;
+    padding-right: 6vw;
   }
 
   .projects-container .row {
@@ -1045,6 +1068,17 @@ button {
     height: 35vh;
     width: unset;
     margin-bottom: 4vh;
+  }
+
+  .project-description h3 {
+    font-size: 5.5vw;
+    line-height: 5vw;
+  }
+  
+  .project-description p {
+    font-size: 4vw;
+    line-height: 5vw;
+    padding: 0vw 3vw;
   }
 
   .skill-container {

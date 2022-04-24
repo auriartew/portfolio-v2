@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Skills() {
     return (
-        <div className="skill-container">
+        <div className="skill-container" id="skills">
             <h3 className="skill-heading">Skills I've been working on</h3>
             <p className="skill-info">As an aspiring developer, I am relentlessly working on improving my chops.
                 Most of my focus has been centered on the MERN stack.

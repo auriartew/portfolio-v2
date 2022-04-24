@@ -85,7 +85,7 @@ export default function Projects() {
                         
                         
 
-                    
+                    <a href="#skills" className="btn">See Skills</a>
                 </div>
             </div>
         </React.Fragment>
