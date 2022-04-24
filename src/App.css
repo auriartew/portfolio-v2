@@ -1017,9 +1017,13 @@ button {
     font-size: 2rem;
     width: 60%;
   }
+  .small-text {
+    font-size: 3vw;
+  }
 
   .about-box {
     width: 80vw;
+    padding: 0;
   }
 
 
